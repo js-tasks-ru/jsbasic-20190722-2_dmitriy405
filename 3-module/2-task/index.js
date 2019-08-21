@@ -12,5 +12,10 @@ function getMinMax(str) {
 	let min = Math.min.apply(null, newArr);
 	let max = Math.max.apply(null, newArr);
 	let arrMinMax = [];
-	return arrMinMax.push(min, max);	
+	arrMinMax.push(min, max);
+	let obj = {
+	    min: arrMinMax[0],
+	    max: arrMinMax[1],
+  		};
+	return obj;
 }
